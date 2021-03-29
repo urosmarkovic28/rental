@@ -142,3 +142,31 @@ header{
         }
     }
 }
+/********************************
+about
+********************************/
+.about{
+    background:linear-gradient(rgba($tertiary,.7),rgba($secondary.7)),url(../img/onama.jpg);
+    @include bgImg(center bottom, cover, 60vh);
+    .container{
+        @include flex(center, center, column);
+        height: 60vh;
+        text-align: center;
+        h2{
+            color: $white;
+            font-size: 3rem;
+            text-shadow: $textShadow;
+        }
+        p{
+            margin-top: 20px;
+            color: $white;
+            text-shadow: $textShadow;
+        }
+    }
+}
+/********************************
+Izdvojeno
+********************************/
+.izdvojeno{
+    display: flex;
+}

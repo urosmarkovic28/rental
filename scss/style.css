@@ -184,4 +184,120 @@ header .box button:hover {
   background: #2c3e50;
   color: #fff;
 }
+
+/********************************
+about
+********************************/
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 147, 117, 0.7)), to(rgba(39, 174, 96, 0.7))), url(../img/onama.jpg);
+  background: linear-gradient(rgba(74, 147, 117, 0.7), rgba(39, 174, 96, 0.7)), url(../img/onama.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 60vh;
+  text-align: center;
+}
+
+.about .container h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.about .container p {
+  margin-top: 20px;
+  color: #fff;
+}
+.izdvojeno{
+  display: flex;
+}
+.izdvojeno article{
+  flex: 1;
+  background: linear-gradient(to right, #f1c40f,#e9ecef);
+}
+.izdvojeno article img{
+  width: 100%;
+  /*display:block;*/
+}
+
+.izdvojeno article .text{
+  background-color: #2c3e50;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.izdvojeno article:nth-child(even) .text{
+  background: #4a9375;
+}
+/********************************
+Benefiti
+********************************/
+.benefiti{
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefiti article{
+  flex: 0 0 50%;
+  height: 50vh;
+}
+.benefiti article h3{
+  font-size: 2rem;
+  font-style: italic;
+  background: #f1c40f;
+ 
+}
+.benefiti article p{
+  text-align: justify;
+  margin-top: 20px;
+}
+.benefiti article:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.benefiti article:nth-child(1) h3{
+  padding: 10px 70px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.benefiti article:nth-child(4) h3{
+  padding: 10px 80px;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+.benefiti article:nth-child(4){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.benefiti article:nth-child(2){
+  background-image: url(../img/benefiti1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.benefiti article:nth-child(3){
+  background-image: url(../img/benefiti2.jpg);
+  background-position: center;
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
