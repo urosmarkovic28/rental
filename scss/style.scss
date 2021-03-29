@@ -76,3 +76,22 @@ topBar
         }
     }
 }
+/********************************
+nav
+********************************/
+nav{
+    ul{
+        @include flex(center, center, row);
+        li{
+            margin: 10px;
+            a{
+                color: $tertiary;
+                font-size: 1.2rem;
+                transition: $transition;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
