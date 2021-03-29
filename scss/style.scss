@@ -19,6 +19,25 @@ Mixins
     flex-direction: $direction;
     flex-wrap: wrap;
 }
+@mixin bgImg ($position,$size,$height){
+    background-position: $position;
+    background-size: $size;
+    height: $height;
+    background-repeat: no-repeat;
+}
+@mixin btn(){
+    background: $accents;
+    border: none;
+    color: $primary;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    transition: $transition;
+    &:hover{
+        cursor: pointer;
+        background: $primary;
+        color: $white;
+    }
+}
 /********************************
 Basic style
 ********************************/
@@ -92,6 +111,34 @@ nav{
                     color: $secondary;
                 }
             }
+        }
+    }
+}
+/********************************
+header
+********************************/
+header{
+    background-image: url(../img/header.jpg);
+    @include bgImg(center, cover, 80vh);
+    @include flex(center, center, row);
+    .box{
+        background: rgba($secondary,.7);
+        text-align: center;
+        padding: 20px;
+        border: 2px solid $white;
+        h1{
+            color: $white;
+            font-size: 2.5rem;
+        }
+        h4{
+            margin-bottom: 20px;
+            color: $white;
+            font-size: 1.2rem;
+            letter-spacing: 1.2px;
+            font-weight: 300;
+        }
+        button{
+            @include btn;
         }
     }
 }

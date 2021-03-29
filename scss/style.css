@@ -122,4 +122,66 @@ nav ul li a {
 nav ul li a:hover {
   color: #27ae60;
 }
+
+/********************************
+header
+********************************/
+header {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .box {
+  background: rgba(39, 174, 96, 0.7);
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+header .box h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+header .box h4 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}
+
+header .box button {
+  background: #f1c40f;
+  border: none;
+  color: #2c3e50;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header .box button:hover {
+  cursor: pointer;
+  background: #2c3e50;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
