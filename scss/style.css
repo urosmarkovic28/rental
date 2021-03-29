@@ -152,8 +152,10 @@ header {
 header .box {
   background: rgba(39, 174, 96, 0.7);
   text-align: center;
-  padding: 20px;
-  border: 2px solid #fff;
+  padding: 20px 40px;
+  border: 2px solid #fff; 
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+
 }
 
 header .box h1 {
@@ -299,5 +301,39 @@ Benefiti
   background-image: url(../img/benefiti2.jpg);
   background-position: center;
   background-size: cover;
+}
+/********************************
+Footer
+********************************/
+footer{
+  background-image:linear-gradient(to right, rgba(241, 196, 15,.7),rgba(241, 196, 15,.7)), url(../img/footer.jpg);
+  padding: 200px 0;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+footer h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+footer p{
+  margin-bottom: 20px;
+}
+footer input{
+  padding: 15px;
+}
+footer input[type="submit"]{
+  background: #2c3e50;
+  border: none;
+  color: #f1c40f;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer input[type="submit"]:hover{
+  cursor: pointer;
+  background: #27ae60;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
